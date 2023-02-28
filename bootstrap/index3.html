@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Register form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="row justify-content-center">
+        <div class="col-4 ">
+            <div class="card p-0 bg-dark text-white">
+                <div class="card-header ps-5 pe-5 bg-white">
+                <img src="assets/img/header-logo.webp" class="card-img-top" alt="">
+            </div>
+                <div class="card-body">
+                    <div class="text-center">
+                        <h3>Register</h3>
+                    </div>
+                    
+                    <form action="">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control mb-3" id="password">
+                        <label for="isim">İsim</label>
+                        <input type="text" class="form-control mb-3" id="isim">
+                        <label for="Soysim">Soysim</label>
+                        <input type="text" class="form-control mb-3" id="Soysim">
+                        <label for="">Cinsiyet</label>
+                        <hr>
+                        <label for="Erkek">Erkek</label>
+                        <input type="radio" id="Erkek" name="Erkek" value="option">
+                        <label for="Kadın">Kadın</label>
+                        <input type="radio" id="Kadın" name="Erkek" value="option2">
+                        <hr>
+                        <label for="">Eğitim</label>
+                        <hr>
+                        <label for="Lise">Lise</label>
+                        <input type="radio" id="Lise" name="Lise" value="option">
+                        <label for="Üniversite">Üniversite</label>
+                        <input type="radio" id="Üniversite" name="Lise" value="option2">
+                        <hr>
+                            <label for="checkbox" name="radio">Hoby</label><hr>
+                            <label for="Müzik">Müzik</label>
+                            <input type="checkbox" name="Müzik" id="Müzik" value="Müzik">
+                            <label for="Sinema">Sinema</label>
+                            <input type="checkbox" name="Sinema" id="Sinema" value="Sinema">
+                            <label for="Kitap">Kitap</label>
+                            <input type="checkbox" name="Kitap" id="Kitap" value="Kitap">
+                            <hr>
+                        
+                        
+                        <input type="submit" class="btn btn-primary mb-3 form-control" value="Login">
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <a class="card-link float-start">Register</a>
+                    <a class="card-link float-end">Forget Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
