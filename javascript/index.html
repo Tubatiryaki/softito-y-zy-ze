@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script>
+    function yaz(){
+        alert("Merhaba Java");
+    }
+    // 
+    /*
+    DEĞİŞKENLER
+    3 tr değişken tanımlama mevcut
+
+    var: Değeri değişabilir
+    let: Farklı yerlerde kullanılır aynı ismi farklı yerlerde farklı değerle kullanabilir
+    const: İçeriği değişmez değeri
+    */
+
+    // var Değişkenleri
+
+    var value1="Erhan Kaya"; //string
+    var value2='c'; //char
+    var value3=5; //int (number)
+    var value4=5.4; //decimal
+    var value5=true; //boolean- bool
+
+    function hesapla(){
+        var sayi1=5;
+        var sayi2=8;
+
+        alert(sayi1 + sayi2);
+    }
+//+ sayısal işlemlerde toplama, sözel işlemlerde yanyana yazma, sözel+ sayısal işlemlerde yanyana yazma işlemi yapar
+//- sayısal işlemi çıkartma yapar
+// * sayısal işlemi çarpma yapar
+// /sayısal işlemlerde bölme yapar
+// % mod alma işlemi yapar
+
+/* Atama Oparatorleri 
+= oluşturulan değişkene değer aktarmak için kullanılır
++= değişkene gelen değeri ekler toplamını tutar
+-= değerden sağdaki değeri çıkarıp işlem yapar
+*= soldaki değerle çarpar
+/= soldaki değer ile sağdaki değeri böler
+%= soldaki deger ile sağdaki değeri böler kalanı değişkene aktarır
+
+KARŞILAŞTIRMA OPERATORLERI
+
+== (if, while, for gibi yapılara daha çok kullaılır) operatorun sağındaki ve solundaki değerlerin birbirine eşit olduğu durumlar
+
+
+!= Eşit olmama durumunu kotrol eder
+< küçük olma durumu
+> büyük olma durumu
+<= küçük eşit olma durumu
+>= büyük eşit olma durumu
+=== Tipininde eşitliğini kontrol eder
+
+Örnek: 
+5==5 (true)
+8!==5 (true)
+8!==8 (false)
+if(a<b || a==b)  if(a<=b)
+
+var sayi=8;
+sayi +=7; açılımı sayi= sayi + 7;
+ sayinin degeri 15 olur
+
+ MANTIKSAL OPARATORLER
+
+ && and (ve operatoru) kıyaslamaların ikisininde aynı değer olması gerekir true olması için  && önceliği vardır
+
+ || or (veya operatoru) kıyaslamalarda bir tane tru olması yeterli sonuç true olur
+
+
+
+
+
+*/
+
+    
+</script>
+</head>
+<body>
+    <button class="btn btn-primary" onclick="alert('Merhaba Dünya')">Tıkla</button>
+    <button class="btn btn-primary" onclick="yaz()">Yaz</button>
+    <button class="btn btn-primary" onclick="yaz2()">Yaz2</button>
+
+    <!--
+        onmouseover: fare üstüne geldiğinde hover etkisi yapar
+        onmouseleave: terkettiğinde
+        onmouseout: terkettiğinde
+        onpointerleave: dişina tıkladığındaa
+
+    -->
+<button class="btn btn-danger" onclick="hesapla()">Hesapla</button>
+
+<script>
+    function yaz2(){
+        alert("Java Script")
+    }
+</script>
+</body>
+</html>
