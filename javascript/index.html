@@ -81,7 +81,26 @@ sayi +=7; açılımı sayi= sayi + 7;
 
 
 */
+function hesaplama(){
+    var sonuc;
 
+    //alert (sonuc); undefined  js yukardan aşağı çalışır. Henüz işlem yapılmadığı için undefined olur
+var sayi1=8;
+var sayi2=18;
+sonuc=sayi1+sayi2;
+alert("Sonuç= "+ sonuc); //26 sonucu çıkar
+// aler ("Sonuc= "+(sayi1+sayi2));
+
+}
+function yaziyaz(){
+    document.getElementById("yazi").innerText+= "Merhaba Dünya";
+}
+function pSayiHesapla(){
+    var pSayi= document.getElementById("sayi").innerText;
+    var sayi=5;
+
+    alert("sonuç= " +(Number(pSayi)+ sayi))
+}
     
 </script>
 </head>
@@ -89,7 +108,21 @@ sayi +=7; açılımı sayi= sayi + 7;
     <button class="btn btn-primary" onclick="alert('Merhaba Dünya')">Tıkla</button>
     <button class="btn btn-primary" onclick="yaz()">Yaz</button>
     <button class="btn btn-primary" onclick="yaz2()">Yaz2</button>
-
+    <hr>
+    <button class="btn btn-danger" onclick="hesapla()">Hesapla</button>
+<hr>
+    <button class="btn btn-primary" onclick="hesaplama()">Hesaplama</button>
+    <hr>
+    <p id="yazi"></p>
+    <button class="btn btn-primary" onclick="document.getElementById('yazi').innerText+='Merhaba Javascript' ">Yazi Ekle</button> 
+    <hr>
+    <p id="yazi"></p>
+    <button class="btn btn-danger" onclick="yaziyaz()">Yazi Yaz</button>
+    <hr>
+    <p id="sayi">18</p>
+    <button class="btn btn-danger" onclick="pSayiHesapla()">Yazi Yaz</button>
+    <hr>
+    
     <!--
         onmouseover: fare üstüne geldiğinde hover etkisi yapar
         onmouseleave: terkettiğinde
@@ -97,7 +130,7 @@ sayi +=7; açılımı sayi= sayi + 7;
         onpointerleave: dişina tıkladığındaa
 
     -->
-<button class="btn btn-danger" onclick="hesapla()">Hesapla</button>
+
 
 <script>
     function yaz2(){
