@@ -18,7 +18,7 @@ function addComponent() {
 
   switch (component) {
     case "Div":
-      document.getElementById(componentId).innerHTML += addDiv();
+      document.getElementById(componentId).append(addDiv());
       break;
   }
 }
@@ -29,7 +29,7 @@ function addDiv() {
   var addClass = document.getElementById("addClass").value;
   var addId = document.getElementById("addId").value;
 
-  var div =
+  /*var div =
     "<div id='" +
     addId +
     "' class='bg-" +
@@ -40,7 +40,13 @@ function addDiv() {
     textColor +
     "'>" +
     Text +
-    "</div>";
+    "</div>"; */
+
+  var div = document.getElementById("div");
+  div.setAttribute("id", addId);
+  div.setAttribute("class", `${addClass} text-${textColor} bg-${bgColor}`);
+  div.textContent = Text;
+
   return div;
 }
 
