@@ -184,3 +184,36 @@ i++;
 
     alert(deger);
 }
+
+promp
+
+function prompToplama(){
+    var sayi1=prompt("sayi 1 Giriniz");
+    var sayi2=prompt("sayi 2 Giriniz");
+
+    var sonuc= Number(sayi1)+ Number(sayi2);
+
+    alert(sonuc);
+}
+// DİZİLER - array
+
+var dersler= new Array("Matematik", "Türkçe", "Fizik", "Kimya" );
+
+// alert (dersler[0]); //0. indexteki değeri yazdırır.
+// alert(dersler); //Bütün dizeyi yazar
+// alert(ders.length);
+
+dersler.push("Teknik resim");
+dersler.push(25);// Dizinin sonuna yeni eleman ekler
+
+dersler.pop(); //dizinin son elemanını siler
+
+dersler.unshift("Fizik"); // Secilen elemanı başa alır. kopyasını
+dersler.unshift(dersler[2]); 
+
+dersler.splice(2, 1);//Kacıncı diziden başlayacak kaçtane silecek
+
+
+dersler.splice(3,0,"Fatih");
+
+console.log(dersler);
