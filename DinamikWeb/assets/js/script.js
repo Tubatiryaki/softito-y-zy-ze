@@ -1,40 +1,62 @@
-
-
-
-var idList=["content"];
-
-
-var listItem=document.createElement("option");
-var itemText=document.createTextNode("content");
+let listItem = document.createElement("option");
+let itemText = document.createTextNode("content");
 listItem.appendChild(itemText);
 
+document.getElementById("componentId").append(listItem);
 
-function addComponent(){
-var listItem=document.createElement("option");
-var itemText=document.createTextNode(document.getElementById("addId").value);
-listItem.appendChild(itemText);
-    document.getElementById("componentId").appendChild(listItem);
+function addComponent() {
+  let listItem = document.createElement("option");
+  let itemText = document.createTextNode(
+    document.getElementById("addId").value
+  );
+  listItem.appendChild(itemText);
 
-    idList.push(document.getElementById("addId").value)
+  document.getElementById("componentId").append(listItem);
+
+  let component = document.getElementById("component").value;
+  let componentId = document.getElementById("componentId").value;
+
+  switch (component) {
+    case "Div":
+      document.getElementById(componentId).innerHTML += addDiv();
+      break;
+  }
+}
+function addDiv() {
+  var bgColor = document.getElementById("Color").value;
+  var textColor = document.getElementById("textColor").value;
+  var Text = document.getElementById("Text").value;
+  var addClass = document.getElementById("addClass").value;
+  var addId = document.getElementById("addId").value;
+
+  var div =
+    "<div id='" +
+    addId +
+    "' class='bg-" +
+    bgColor +
+    " " +
+    addClass +
+    " text-" +
+    textColor +
+    "'>" +
+    Text +
+    "</div>";
+  return div;
 }
 
+function select() {
+  var component = document.getElementById("component").value;
 
-function select(){
-    var component=document.getElementById("component").value;
-    alert(component);
-    if(component=="Button"){
-        selectButtonShow();
-    }
-    else{
-        selectButtonHide();
-    }
+  if (component == "Button") {
+    selectButtonShow();
+  } else {
+    selectButtonHide();
+  }
 }
 
-function selectButtonHide(){
-    document.getElementById("btnSize").style.display=none; //Display gizlemek icin
-display="none";
+function selectButtonHide() {
+  document.getElementById("btnSize").style.display = "none";
 }
-function selectButtonShow(){
-    document.getElementById("btnSize").style.display=none; //Display gizlemek icin
-display="block";
+function selectButtonShow() {
+  document.getElementById("btnSize").style.display = "block";
 }
