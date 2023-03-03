@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i2</title>
+    <script src="assets/js/s2.js"></script>
+  </head>
+  <body onload="proccess()">
+    <table border="">
+      <thead>
+        <tr>
+          <th colspan="4" id="categoryName"></th>
+        </tr>
+      </thead>
+      <tbody id="productList"></tbody>
+    </table>
+    <div>
+      <label for="">Ürün Ekle</label><br />
+      <input type="text" id="productName" placeholder="Product Name" />
+      <input type="number" id="productPrice" placeholder="Product Price" />
+      <input type="number" id="productStock" placeholder="Product Stock" />
+      <button class="" onclick="productEkle()">Ekle</button>
+    </div>
+  </body>
+</html>
